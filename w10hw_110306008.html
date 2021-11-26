@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        li em{
+			text-decoration: line-through;
+		}\\
+		h1, em{
+			text-decoration: underline;
+		}
+        .fontStyle1{
+            color: rgb(45, 141, 141);
+			font-style: italic;
+            font-size: x-large;
+		}
+		.fontStyle2{
+            color: rgb(24, 253, 55);
+			font-style: normal;
+            font-weight: bolder;
+		}
+		.fontStyle3{
+			font-family: 'Courier New', Courier, monospace;
+		}
+        .fontStyle4{
+            font-weight: bolder;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>110306008_Lab8</title>
+</head>
+<body>
+<form method="post">
+	<table border="1" width="80%">
+		<tr>
+			<th colspan="2">
+                <p>
+                    <em>About--110306008</em>
+                    <li><em>nccu</em></li>
+                </p>
+								
+			</th>
+		</tr>
+		<tr>
+			<td rowspan="3">
+				<div align="center">
+					<img src="cat1.jfif"><br>
+				</div>
+				<div align="center">
+					img
+				</div>
+			</td>
+			<td colspan="2">
+				<label>Name:
+					<input type="text" name="name"><br>
+				</label>
+				<label>gender:
+					<form>
+                        <p class="fontStyle2">
+                            <input type="radio" name="gender" value="male" checked>Male
+                            <input type="radio" name="gender" value="female">Feale
+                            <input type="radio" name="gender" value="other">Other
+                        </p>
+					</form>
+				</label>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>
+                    <div class="fontStyle3">
+                    county
+					<select name="county">
+						<option value="Taipei">Taipei</option>
+						<option value="Tainan">Tainan</option>
+						<option value="Taichung">Taichung</option>
+						<option value="Taoyuan">Taoyuan</option>
+					</select>
+                </div>
+				</label>
+			</td>
+			<td>
+				<div class="fontStyle1">Birthday</div>
+				<label>birthday
+					<input id="birthday" type="date">
+				</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				E-mail:
+					<input id="mail" type="mail">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Hobby
+			</td>
+			<td colspan="2"><p class="fontStyle3">
+				<input type="checkbox" name="hobby" value="swimming">Swimming
+				<input type="checkbox" name="hobby" value="Volleyball">Volleyball
+				<input type="checkbox" name="hobby" value="Movie">Movie
+				<input type="checkbox" name="hobby" value="Game">Game
+				<input type="checkbox" name="hobby" value="sleep">Sleep
+            </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Skill
+			</td>
+			<td colspan="2">
+                <p class="fontStyle4">
+				<input type="checkbox" name="skill" value="Java">Java
+				<input type="checkbox" name="skill" value="HTML">HTML
+				<input type="checkbox" name="skill" value="Python">Python
+				<input type="checkbox" name="skill" value="Microssoft Office">Microssoft Office
+				<input type="checkbox" name="skill" value="Premiere">Premiere
+            </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Say something
+			</td>
+			<td colspan="2">
+				<textarea rows="3" cols="100" placeholder="Say something here"></textarea>  
+			</td>
+		</tr>
+        <tr>
+            <td colspan="3">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </td>
+        </tr>
+	</table>
+    </form>
+</body>
+</html>
